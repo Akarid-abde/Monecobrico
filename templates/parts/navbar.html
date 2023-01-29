@@ -1,0 +1,90 @@
+{% load static %}
+<!-- Social links -->
+<aside class="_social-links">
+	<ul class="_links-list">
+		<li class="_social-link"><a href="https://www.facebook.com/monecobrico" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+		<li class="_social-link"><a href="https://instagram.com/decoration._.2022?igshid=YmMyMTA2M2Y=" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+	</ul>
+</aside>
+
+
+    <nav style="background-color:#F25244;height:82px;" class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a href="index.php" style="margin-right: 0px;">
+            <video  width="130px" style="position: sticky;" autoplay loop muted>
+                <source src="{% static 'img/LogoV.mp4' %}" type="video/mp4">
+            </video>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'index' %}">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#principes">Principe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Commentaires</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#milestone2">Stratégie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="font-family: 'Mansalva', cursive;font-weight: lighter;line-height: 1.7;" class="nav-link" id="FontBlog" href="#blog">Blog</a>
+                    </li>
+                </ul>
+                <a href="{% url 'contact' %}" class="btn btn-warning ms-lg-3">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SLIDER -->
+    <div class="owl-carousel owl-theme hero-slider" id="home" >
+        <div class="slide slide1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                    
+                        <h6 class="text-white text-uppercase" > Nous fournissons des travailleurs de qualités </h6>
+                        <h1 class="display-3 my-4">Agence de bricolage<br />Obtenez votre devis de bricolage gratuitement.</h1>
+                        <a  href="#services" class="btn btn-outline-light ms-3">Nos Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide slide2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1 text-white">                        
+                        <h1 class="display-3 my-4">La première agence de bricolage au Maroc</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide slide3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1 text-white">
+                        <h1 class="display-3 my-4">Trouvez le prestataire idéal pour tous <br />les services du quotidien</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="principe" class="text-center mt-4">
+            <video width="100%"  autoplay loop muted>
+                <source src="{% static 'img/vediobanner.mp4' %}" type="video/mp4">
+            </video>
+    </div>
+
+    <div id="particles-js"> </div>
