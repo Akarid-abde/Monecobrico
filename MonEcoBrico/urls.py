@@ -21,7 +21,7 @@ from django.views.static import serve
 from django.conf.urls import handler404, handler500
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('abde/', admin.site.urls),
     path('', include('App.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += [re_path(r'^media/(?P<path>.*)$', serve,
