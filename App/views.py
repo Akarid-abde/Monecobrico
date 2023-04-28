@@ -8,14 +8,12 @@ from django.core.mail import send_mail
 
 
 # Create your views here.
-
-
 def index(request):
     return render(request, 'MonEcoBrico/index.html', {'metiers': Metiers.objects.all()})
 
 
-# def contact(request):
-#     return render(request, 'MonEcoBrico/contact.html')
+def privacy_policy(request):
+    return render(request, 'MonEcoBrico/privacy_policy.html')
 
 
 def contact(request):
@@ -108,6 +106,11 @@ def error_500(request):
 
 def error_404(request, exception):
     return render(request, '404.html')
+
+
+# def privacy(request):
+#     return render(request, 'MonEcoBrico/privacy_policy.html')
+
 
 # class ServiceList(generic.ListView):
 #     queryset = Metiers.objects.filter(status=1).order_by('-created_on')
